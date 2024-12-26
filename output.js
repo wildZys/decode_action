@@ -1,7 +1,10 @@
+//Thu Dec 26 2024 03:05:41 GMT+0000 (Coordinated Universal Time)
+//Base:https://github.com/echo094/decode-js
+//Modify:https://github.com/smallfawn/decode_action
 //Thu Dec 26 2024 03:02:54 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-const $ = new Env("甬派");
+const $ = new Env("\u752C\u6D3E");
 const notify = $.isNode() ? require("../sendNotify") : "";
 (() => {
   function b(U) {
@@ -813,15 +816,15 @@ const notify = $.isNode() ? require("../sendNotify") : "";
         for (;;) {
           switch (aV.prev = aV.next) {
             case 0:
-              if (console.log("作者：@xzxxn777\n频道：https://t.me/xzxxn777\n群组：https://t.me/xzxxn7777\n自用机场推荐：https://xn--diqv0fut7b.com\n"), j) {
+              if (console.log("\u4F5C\u8005\uFF1A@xzxxn777\n\u9891\u9053\uFF1Ahttps://t.me/xzxxn777\n\u7FA4\u7EC4\uFF1Ahttps://t.me/xzxxn7777\n\u81EA\u7528\u673A\u573A\u63A8\u8350\uFF1Ahttps://xn--diqv0fut7b.com\n"), j) {
                 {
                   aV.next = 6;
                   break;
                 }
               }
-              console.log("先去boxjs填写账号密码");
+              console.log("\u5148\u53BBboxjs\u586B\u5199\u8D26\u53F7\u5BC6\u7801");
               aV.next = 5;
-              return S("先去boxjs填写账号密码");
+              return S("\u5148\u53BBboxjs\u586B\u5199\u8D26\u53F7\u5BC6\u7801");
             case 5:
               return aV.abrupt("return");
             case 6:
@@ -837,7 +840,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                 }
               }
               a0 = Z.value;
-              console.log("随机生成设备");
+              console.log("\u968F\u673A\u751F\u6210\u8BBE\u5907");
               o = a0.split("&")[0];
               p = a0.split("&")[1];
               q = a0.split("&")[2];
@@ -848,8 +851,8 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               v = a1.model;
               console.log(k);
               console.log(v);
-              console.log("用户：".concat(o, "开始任务"));
-              console.log("登录");
+              console.log("\u7528\u6237\uFF1A".concat(o, "\u5F00\u59CB\u4EFB\u52A1"));
+              console.log("\u767B\u5F55");
               a2 = Date.now();
               aV.next = 28;
               return z("username=".concat(o, "&password=").concat(encodeURI(p), "&deviceId=").concat(k, "&globalDatetime=").concat(a2, "&sign=").concat(md5("globalDatetime".concat(a2, "username").concat(o, "test_123456679890123456")).toUpperCase()));
@@ -863,9 +866,9 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               console.log(a3.message);
               return aV.abrupt("continue", 245);
             case 32:
-              console.log("获取userId：".concat(a3.data.userId));
+              console.log("\u83B7\u53D6userId\uFF1A".concat(a3.data.userId));
               s = a3.data.userId;
-              console.log("获取name：".concat(a3.data.nickname));
+              console.log("\u83B7\u53D6name\uFF1A".concat(a3.data.nickname));
               a4 = a3.data.token;
               u = a3.data.nickname;
               aV.next = 39;
@@ -880,10 +883,10 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               console.log(a5.message);
               return aV.abrupt("continue", 245);
             case 43:
-              console.log("登录成功");
+              console.log("\u767B\u5F55\u6210\u529F");
               l = a5.data;
-              console.log("————————————");
-              console.log("开始任务");
+              console.log("\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014");
+              console.log("\u5F00\u59CB\u4EFB\u52A1");
               a6 = true;
               a7 = true;
               a8 = true;
@@ -899,19 +902,19 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                 aV.next = 68;
                 break;
               }
-              if (ac = ab.value, console.log("任务：".concat(ac.type)), ac.dayscore != ac.usedScore) {
+              if (ac = ab.value, console.log("\u4EFB\u52A1\uFF1A".concat(ac.type)), ac.dayscore != ac.usedScore) {
                 {
                   aV.next = 62;
                   break;
                 }
               }
-              console.log("任务已完成");
+              console.log("\u4EFB\u52A1\u5DF2\u5B8C\u6210");
               return aV.abrupt("continue", 66);
             case 62:
-              console.log("任务进度：".concat(ac.usedScore, "/").concat(ac.dayscore));
-              "阅读新闻" == ac.type && (a6 = false);
-              "点赞" == ac.type && (a7 = false);
-              "分享新闻" == ac.type && (a8 = false);
+              console.log("\u4EFB\u52A1\u8FDB\u5EA6\uFF1A".concat(ac.usedScore, "/").concat(ac.dayscore));
+              "\u9605\u8BFB\u65B0\u95FB" == ac.type && (a6 = false);
+              "\u70B9\u8D5E" == ac.type && (a7 = false);
+              "\u5206\u4EAB\u65B0\u95FB" == ac.type && (a8 = false);
             case 66:
               aV.next = 56;
               break;
@@ -971,7 +974,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               }
               return aV.abrupt("break", 113);
             case 94:
-              if (console.log("文章：".concat(al.title)), am = al.id, a6) {
+              if (console.log("\u6587\u7AE0\uFF1A".concat(al.title)), am = al.id, a6) {
                 aV.next = 101;
                 break;
               }
@@ -979,7 +982,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               return D("/yongpai-news/api/news/detail?newsId=".concat(am, "&userId=").concat(s, "&deviceId=").concat(k));
             case 99:
               an = aV.sent;
-              console.log("阅读：".concat(an.message));
+              console.log("\u9605\u8BFB\uFF1A".concat(an.message));
             case 101:
               if (a7) {
                 aV.next = 106;
@@ -989,7 +992,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               return D("/yongpai-ugc/api/praise/save_news?userId=".concat(s, "&newsId=").concat(am, "&deviceId=").concat(k));
             case 104:
               ao = aV.sent;
-              0 == ao.code ? (ae--, console.log("点赞获得：".concat(null == ao || null === (ap = ao.data) || undefined === ap ? undefined : ap.score, "积分"))) : console.log(ao.message);
+              0 == ao.code ? (ae--, console.log("\u70B9\u8D5E\u83B7\u5F97\uFF1A".concat(null == ao || null === (ap = ao.data) || undefined === ap ? undefined : ap.score, "\u79EF\u5206"))) : console.log(ao.message);
             case 106:
               if (a8) {
                 aV.next = 111;
@@ -999,7 +1002,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               return D("/yongpai-ugc/api/forward/news?userId=".concat(s, "&newsId=").concat(am, "&source=4"));
             case 109:
               aq = aV.sent;
-              0 == aq.code ? console.log("分享获得：".concat(null == aq ? undefined : aq.data, "积分")) : console.log(aq.message);
+              0 == aq.code ? console.log("\u5206\u4EAB\u83B7\u5F97\uFF1A".concat(null == aq ? undefined : aq.data, "\u79EF\u5206")) : console.log(aq.message);
             case 111:
               aV.next = 88;
               break;
@@ -1032,11 +1035,11 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                 aV.next = 139;
                 break;
               }
-              if (av = au.value, !av.title.includes("转盘") && !av.subtitle.includes("转盘")) {
+              if (av = au.value, !av.title.includes("\u8F6C\u76D8") && !av.subtitle.includes("\u8F6C\u76D8")) {
                 aV.next = 137;
                 break;
               }
-              console.log("抽奖活动：".concat(av.title));
+              console.log("\u62BD\u5956\u6D3B\u52A8\uFF1A".concat(av.title));
               ar = av.id;
               return aV.abrupt("break", 139);
             case 137:
@@ -1054,16 +1057,16 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               at.f();
               return aV.finish(144);
             case 147:
-              if (console.log("————————————"), console.log("阅读抽奖"), console.log("获取id"), ar) {
+              if (console.log("\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014"), console.log("\u9605\u8BFB\u62BD\u5956"), console.log("\u83B7\u53D6id"), ar) {
                 aV.next = 154;
                 break;
               }
-              console.log("未找到id");
+              console.log("\u672A\u627E\u5230id");
               aV.next = 239;
               break;
             case 154:
               console.log(ar);
-              console.log("获取抽奖id");
+              console.log("\u83B7\u53D6\u62BD\u5956id");
               aV.next = 158;
               return D("/yongpai-news/api/news/detail?newsId=".concat(ar, "&userId=").concat(s, "&deviceId=").concat(k));
             case 158:
@@ -1071,7 +1074,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               ax = aw.data.body.match(/id=\d+/);
               ax && (n = ax[0].split("=")[1]);
               console.log(n);
-              console.log("阅读登录");
+              console.log("\u9605\u8BFB\u767B\u5F55");
               aV.next = 165;
               return F("userId=".concat(s, "&dbredirect=https://92722.activity-12.m.duiba.com.cn/hdtool/index?id=").concat(n, "&dbnewopen"));
             case 165:
@@ -1081,7 +1084,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               return H(ay.data);
             case 169:
               m = aV.sent;
-              console.log("获取抽奖key");
+              console.log("\u83B7\u53D6\u62BD\u5956key");
               aV.next = 173;
               return L("https://92722.activity-12.m.duiba.com.cn/hdtool/index?id=".concat(n, "&dbnewopen&from=login&spm=92722.1.1.1"));
             case 173:
@@ -1091,7 +1094,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
             case 176:
               aA = aV.sent;
               lotteryCount = aA.element.freeLimit;
-              console.log("拥有".concat(lotteryCount, "次抽奖"));
+              console.log("\u62E5\u6709".concat(lotteryCount, "\u6B21\u62BD\u5956"));
               aB = 0;
             case 180:
               if (!(aB < aA.element.freeLimit)) {
@@ -1136,11 +1139,11 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               aV.next = 231;
               break;
             case 204:
-              if ("thanks" == aH.lottery.type && (console.log("谢谢参与"), w += "用户：".concat(o, " 抽奖获得：谢谢参与\n")), "alipay" != aH.lottery.type) {
+              if ("thanks" == aH.lottery.type && (console.log("\u8C22\u8C22\u53C2\u4E0E"), w += "\u7528\u6237\uFF1A".concat(o, " \u62BD\u5956\u83B7\u5F97\uFF1A\u8C22\u8C22\u53C2\u4E0E\n")), "alipay" != aH.lottery.type) {
                 aV.next = 231;
                 break;
               }
-              for (console.log("抽奖获得支付宝红包：".concat(aH.lottery.title)), aI = aH.lottery.link, aJ = aI.split("?")[1], aK = {}, aL = aJ.split("&"), aM = 0, aN = aL.length; aM < aN; aM++) {
+              for (console.log("\u62BD\u5956\u83B7\u5F97\u652F\u4ED8\u5B9D\u7EA2\u5305\uFF1A".concat(aH.lottery.title)), aI = aH.lottery.link, aJ = aI.split("?")[1], aK = {}, aL = aJ.split("&"), aM = 0, aN = aL.length; aM < aN; aM++) {
                 aO = aL[aM].split("=");
                 aK[aO[0]] = aO[1];
               }
@@ -1148,7 +1151,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                 aV.next = 230;
                 break;
               }
-              console.log("获取兑换key");
+              console.log("\u83B7\u53D6\u5151\u6362key");
               aV.next = 217;
               return L("https://92722.activity-12.m.duiba.com.cn/activity/takePrizeNew?recordId=".concat(aP, "&dbnewopen"));
             case 217:
@@ -1164,11 +1167,11 @@ const notify = $.isNode() ? require("../sendNotify") : "";
             case 225:
               aS = aV.sent;
               console.log(aS.message);
-              w += "用户：".concat(o, " 抽奖获得：").concat(aH.lottery.title, " 领取结果：").concat(aS.message, "\n");
+              w += "\u7528\u6237\uFF1A".concat(o, " \u62BD\u5956\u83B7\u5F97\uFF1A").concat(aH.lottery.title, " \u9886\u53D6\u7ED3\u679C\uFF1A").concat(aS.message, "\n");
               aV.next = 231;
               break;
             case 230:
-              console.log("请设置支付宝姓名和账号");
+              console.log("\u8BF7\u8BBE\u7F6E\u652F\u4ED8\u5B9D\u59D3\u540D\u548C\u8D26\u53F7");
             case 231:
               aV.next = 195;
               break;
@@ -1182,13 +1185,13 @@ const notify = $.isNode() ? require("../sendNotify") : "";
               aV.next = 180;
               break;
             case 239:
-              console.log("————————————");
-              console.log("查询积分");
+              console.log("\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014");
+              console.log("\u67E5\u8BE2\u79EF\u5206");
               aV.next = 243;
               return D("/yongpai-user/api/user/client?userId=".concat(s, "&deviceId=").concat(k, "&token=").concat(a4));
             case 243:
               aT = aV.sent;
-              console.log("拥有积分：".concat(aT.data.score, "\n"));
+              console.log("\u62E5\u6709\u79EF\u5206\uFF1A".concat(aT.data.score, "\n"));
             case 245:
               aV.next = 10;
               break;
@@ -1254,7 +1257,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a5)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             a9.next = 9;
                             break;
                           case 6:
@@ -1325,7 +1328,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a4)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             a7.next = 9;
                             break;
                           case 6:
@@ -1400,7 +1403,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a5)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             a8.next = 9;
                             break;
                           case 6:
@@ -1468,7 +1471,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a6)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             a9.next = 9;
                             break;
                           case 6:
@@ -1548,7 +1551,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a5)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             ab.next = 10;
                             break;
                           case 6:
@@ -1635,7 +1638,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a5)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             a8.next = 9;
                             break;
                           case 6:
@@ -1717,7 +1720,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                               break;
                             }
                             console.log("".concat(JSON.stringify(a8)));
-                            console.log("".concat($.name, " API请求失败，请检查网路重试"));
+                            console.log("".concat($.name, " API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u8DEF\u91CD\u8BD5"));
                             ah.next = 18;
                             break;
                           case 6:
@@ -1728,7 +1731,7 @@ const notify = $.isNode() ? require("../sendNotify") : "";
                             eval(ac);
                             ad = /var\s+key\s+=\s+'([^']+)';/.exec(getDuibaToken.toString())[1];
                             console.log(ad);
-                            console.log("获取consumerId");
+                            console.log("\u83B7\u53D6consumerId");
                             ae = /consumerId:'(\d+)'/;
                             af = aa.match(ae);
                             t = af ? af[1] : "4136126583";
@@ -2638,7 +2641,7 @@ function Env(t, e) {
         }
       }
       if (!this.isMuteLog) {
-        let t = ["", "==============📣系统通知📣=============="];
+        let t = ["", "==============\uD83D\uDCE3\u7CFB\u7EDF\u901A\u77E5\uD83D\uDCE3=============="];
         t.push(e);
         s && t.push(s);
         i && t.push(i);
